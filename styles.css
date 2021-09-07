@@ -1,8 +1,8 @@
-body {
-    margin: 0 auto;
-    padding: 0;
-    width: 35.625em;
-    font: 75%/120% "Times New Roman", Helevatica, sans-serif;
+body{
+    font-size:0.825em;
+    color:#666;
+    background:url('img/page_bg.jpg') repeat-x #383b3f;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -28,8 +28,8 @@ ul {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 ol {
@@ -37,8 +37,8 @@ ol {
     list-style-type: decimal;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     padding-inline-start: 40px;
 }
 
@@ -58,8 +58,8 @@ p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 div {
@@ -68,4 +68,78 @@ div {
 
 .post_id {
     padding: 5px 10px 15px;
+}
+
+#json_list {
+    position:relative;
+    margin:50px auto;
+    width:410px;
+    background:url('img/main_bg.jpg') repeat-x #aeadad;
+    border:1px solid #CCCCCC;
+    padding:70px 25px 60px;
+
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+}
+
+.post_list {
+    width:400px;
+    overflow:hidden;
+    position:relative;
+    background:url('img/dark_bg.jpg') repeat #4e5355;
+    padding-bottom:10px;
+
+    -moz-box-shadow:0 0 10px #222 inset;
+    box-shadow:0 0 10px #222 inset;
+}
+
+.swControls {
+    position:absolute;
+    margin-top:10px;
+}
+
+a.swShowPage{
+
+    background-color:#444444;
+    float:left;
+    height:15px;
+    margin:4px 3px;
+    text-indent:-9999px;
+    width:15px;
+
+
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+a.swShowPage:hover,
+a.swShowPage.active{
+    background-color:#2993dd;
+    -moz-box-shadow:0 0 7px #1e435d inset;
+    box-shadow:0 0 7px #1e435d inset;
+}
+
+
+.post_list li{
+    background-color:#F4F4F4;
+    list-style:none outside none;
+    margin:10px 10px 0;
+    padding:20px;
+    float:left;
+    -moz-box-shadow:0 0 6px #111111;
+    -webkit-box-shadow:0 0 6px #111111;
+    box-shadow:0 0 6px #111111;
+}
+
+.post_list,
+.post_list li{
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+}
+
+.clear{
+   clear:both;
 }
