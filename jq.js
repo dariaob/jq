@@ -19,11 +19,9 @@ $(function () {
     $.getJSON(URL1, function (data) {
         let html = '';
         $.each(data, function (key, value) {
-            html += '<ul class="post_list">'
-            html += '<li class="post_id">'+ value.body +'</li>'
-            html += '</ul>'
+            html += '<li>'+ value.body +'</li>'
         });
-        $('#json_list').html(html);
+        $('.post_list').html(html);
     });
 })
 
@@ -118,5 +116,5 @@ $(document).ready(function(){
 $(document).ready(function () {
     $('.post_list').sweetPages({perPage : 3});
     let controls = $('.swControls').detach();
-    controls.appendTo('#json_list');
+    controls.appendTo('.main');
 });
